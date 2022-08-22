@@ -29,8 +29,8 @@
     justify-content: space-between;
 
     border-bottom: 1px solid #D9D7D9;
-    padding-bottom: 16px;
-    margin-bottom: 32px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
 
     &__title {
       font-family: 'Koulen', cursive;
@@ -77,6 +77,37 @@
       justify-content: space-between;
 
       padding: 0 16px;
+
+      & + li {
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid #D9D7D9;
+      }
+
+      &__title {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+      }
+
+      &__sublist {
+        width: 100%;
+        display: grid;
+        gap: 16px;
+        list-style: none;
+
+        padding: 16px 32px 0 32px;
+
+        &__item {
+          font-size: 16px;
+          line-height: 18px;
+          font-family: "Roboto", sans-serif;
+
+          background: none;
+          border: 0;
+        }
+      }
     }
   }
 
