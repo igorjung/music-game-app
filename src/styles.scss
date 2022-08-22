@@ -1,0 +1,45 @@
+$bg-primary: #FFFFFF;
+$bg-secondary: #F2F2F2;
+
+$txt-primary: #131326;
+$txt-secondary: #10E85F;
+$txt-tertiary: #40363D;
+
+$btn-primary: #10E85F;
+$btn-disabled: #F2F2F2;
+
+$border-primary: #F2F2F2;
+$border-secondary: #D9D7D9;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Koulen", cursive;
+}
+
+p,
+strong,
+small,
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+}

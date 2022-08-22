@@ -1,0 +1,9 @@
+<app-header (openMenuEvent)="setMenuStatus(true)"></app-header>
+<section>
+  <app-menu
+    (closeMenuEvent)="setMenuStatus(false)"
+    [status]="menuStatus"
+  ></app-menu>
+  <router-outlet></router-outlet>
+</section>
+<app-footer></app-footer>

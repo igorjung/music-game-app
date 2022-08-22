@@ -1,0 +1,40 @@
+<div
+  class="menu"
+  *ngIf="status"
+>
+  <header class="menu__header">
+    <div></div>
+    <h1 class="menu__header__title">MusicGame</h1>
+    <button
+      type="button"
+      (click)="closeMenuEvent.emit()"
+      class="menu__header__button"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </header>
+  <ul class="menu__list">
+    <li class="menu__list__item">
+      <details>
+        <summary>Idiomas</summary>
+        <ol>
+          <li>Português</li>
+          <li>Inglês</li>
+        </ol>
+      </details>
+    </li>
+    <li class="menu__list__item">
+      <span class="menu__list__item__title">Modo Noturno</span>
+      <mat-slide-toggle>Slide me!</mat-slide-toggle>
+    </li>
+  </ul>
+  <footer class="menu__footer">
+    <small class="menu__footer__text">
+      Criado por
+      <a
+        href="https://github.com/igorjung"
+        class="menu__footer__text__bold"
+      >@igorjung</a>
+    </small>
+  </footer>
+</div>

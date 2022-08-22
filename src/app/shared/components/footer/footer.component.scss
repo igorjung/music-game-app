@@ -1,0 +1,23 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 32px;
+  margin-top: 32px;
+
+  &__text {
+    font-size: 16px;
+
+    &__bold {
+      text-decoration: none;
+      color: #10E85F;
+      font-weight: bold;
+    }
+  }
+}
