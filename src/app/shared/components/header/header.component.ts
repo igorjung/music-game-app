@@ -14,9 +14,11 @@ export class HeaderComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
-    console.log('&&&&&&')
     this.dialog.open(DialogComponent, {
-      data: 'Texto',
+      data: {
+        title: 'ABOUT',
+        content: `This is a game for Marvel fans! Inspired by, and, Each day a new character is picked from, Marvel's API. It is quite simple to play it. Guess the character name using just the blurred picture. If you guess it wrong, the picture becomes clearer. All rights go to the rightful owners - no copyright infringement intended.`
+      }
     });
   }
 }

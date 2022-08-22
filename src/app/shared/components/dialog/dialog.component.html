@@ -1,4 +1,17 @@
-<h1 mat-dialog-title>Favorite Animal</h1>
-<div mat-dialog-content>
-  {{ data }}
+
+<div class="modal-overlay" mat-dialog-close></div>
+<div class="modal">
+  <header mat-dialog-title class="modal__header">
+    <h2 class="modal__header__title">{{ data.title }}</h2>
+    <button
+      mat-dialog-close
+      type="button"
+      class="modal__header__button"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </header>
+  <section mat-dialog-content class="modal__content">
+    <p class="modal__content__text">{{ data.content }}</p>
+  </section>
 </div>
